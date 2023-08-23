@@ -1,6 +1,7 @@
 div > p {
   padding: 0 2rem;
 }
+
 div > h1 ~ p {
   color: grey;
 }
