@@ -2,13 +2,13 @@ div > p {
   padding: 0 2rem;
 }
 
+div > h1 ~ p {
+  color: grey;
+}
+
 div > h1 + p {
   color: black;
   font-style: italic;
-}
-
-div p {
-  color: grey;
 }
 
 div > h2 ~ p {
