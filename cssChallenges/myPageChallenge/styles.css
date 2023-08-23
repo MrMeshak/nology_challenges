@@ -1,0 +1,49 @@
+* {
+  display: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 1rem;
+}
+
+header h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  color: darkorange;
+  margin: 2rem;
+}
+
+header h3 {
+  display: flex;
+  justify-content: end;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.section-bands {
+  padding: 1rem;
+}
+
+.section-bands h3 {
+  font-weight: bold;
+  font-size: x-large;
+  color: green;
+  padding: 1.5rem 0rem;
+}
+
+.card {
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: 2px solid black;
+  padding: 0 2rem;
+}
+
+.card h4 {
+  text-decoration: underline;
+}
