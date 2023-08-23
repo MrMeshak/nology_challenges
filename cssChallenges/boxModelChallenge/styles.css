@@ -1,0 +1,19 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  background: lightgreen;
+  padding: 1.5rem 0rem;
+  border: 3px orange solid;
+}
+
+.card {
+  padding: 2.5rem;
+  background-color: pink;
+  border: 2px solid orange;
+}
+
+.card p {
+  padding-left: 2rem;
+}
