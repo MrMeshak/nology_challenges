@@ -46,4 +46,5 @@ header h3 {
 
 .card h4 {
   text-decoration: underline;
+  font-style: italic;
 }
