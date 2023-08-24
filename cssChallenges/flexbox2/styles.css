@@ -1,13 +1,13 @@
 .container-1 {
   display: flex;
+  width: fit-content;
   flex-wrap: wrap;
-  width: 900px;
   padding: 2rem;
 }
 
 .container-2 {
   display: flex;
-  width: 900px;
+  width: fit-content;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
+  width: 300px;
   height: 300px;
 }
 
