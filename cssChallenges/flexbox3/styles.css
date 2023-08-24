@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.card-group-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+.card-group-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-light-blue {
+  background-color: lightblue;
+}
+
+.bg-blue {
+  background-color: lightskyblue;
+}
+
+.bg-grey {
+  background-color: lightgrey;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-orange {
+  background-color: lightsalmon;
+}
+
+.bg-light-green {
+  background-color: lightgreen;
+}
+
+.bg-light-red {
+  background-color: lightcoral;
+}
+
+.bg-slate {
+  background-color: lightsteelblue;
+}
