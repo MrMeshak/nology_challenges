@@ -1,7 +1,7 @@
 const parent1 = 'blue';
-const parent2 = 'green';
+const parent2 = 'blue';
 
-function printEyeColorProbablity(parent1, parent2) {
+function printEyeColorProbability(parent1, parent2) {
   console.log(parent1, parent2);
   const parents = [parent1, parent2];
 
@@ -12,8 +12,9 @@ function printEyeColorProbablity(parent1, parent2) {
     } else if (parent1 === 'blue') {
       console.log('brown 0%, green 1%, blue: 99%');
       return;
-    } else {
+    } else if (parent1 === 'green') {
       console.log('brown <1%, green 75%, blue 25%');
+      return;
     }
   }
 
@@ -36,4 +37,4 @@ function printEyeColorProbablity(parent1, parent2) {
   return;
 }
 
-printEyeColorProbablity(parent1, parent2);
+printEyeColorProbability(parent1, parent2);

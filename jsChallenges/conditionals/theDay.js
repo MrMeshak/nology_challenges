@@ -1,4 +1,4 @@
-const day = 33;
+const day = 14;
 
 switch (day % 7) {
   case 1:
@@ -22,4 +22,6 @@ switch (day % 7) {
   case 0:
     console.log('sunday');
     break;
+  default:
+    console.log('invalid input');
 }
