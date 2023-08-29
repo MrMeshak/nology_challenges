@@ -1,6 +1,6 @@
 const n = 5;
 
-if (Number.isNaN(Number(n))) {
+if (typeof n === 'number') {
   console.log('invalid n');
 } else if (n % 2 === 0) {
   console.log(`${n} is even`);
