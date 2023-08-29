@@ -1,0 +1,10 @@
+@use './partials/mixins';
+
+.flag {
+  @include mixins.flex-direction-modifier;
+}
+
+.flag-seg {
+  height: 10rem;
+  @include mixins.bg-color-modifier;
+}

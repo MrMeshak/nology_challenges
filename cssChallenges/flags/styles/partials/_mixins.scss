@@ -1,0 +1,63 @@
+@use './variables.scss';
+
+@mixin bg-color-modifier {
+  &--bg-black {
+    background-color: map-get(variables.$colors, black);
+  }
+
+  &--bg-red {
+    background-color: map-get(variables.$colors, red);
+  }
+
+  &--bg-yellow {
+    background-color: map-get(variables.$colors, yellow);
+  }
+
+  &--bg-green {
+    background-color: map-get(variables.$colors, green);
+  }
+
+  &--bg-white {
+    background-color: map-get(variables.$colors, white);
+  }
+
+  &--bg-orange {
+    background-color: map-get(variables.$colors, orange);
+  }
+}
+
+@mixin flex-direction-modifier {
+  &--flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@mixin screen-sm {
+  @media only screen and (min-width: map-get(variables.$screen, sm)) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media only screen and (min-width: map-get(variables.$screen, md)) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media only screen and (min-width: map-get(variables.$screen, lg)) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media only screen and (min-width: map-get(variables.$screen, xl)) {
+    @content;
+  }
+}

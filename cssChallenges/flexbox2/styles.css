@@ -1,0 +1,42 @@
+.container-1 {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.container-2 {
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.bg-blue {
+  background-color: lightblue;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: lightgreen;
+}

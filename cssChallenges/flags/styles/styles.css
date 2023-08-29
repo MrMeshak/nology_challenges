@@ -1,0 +1,30 @@
+.flag--flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flag--flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flag-seg {
+  height: 10rem;
+}
+.flag-seg--bg-black {
+  background-color: black;
+}
+.flag-seg--bg-red {
+  background-color: red;
+}
+.flag-seg--bg-yellow {
+  background-color: yellow;
+}
+.flag-seg--bg-green {
+  background-color: green;
+}
+.flag-seg--bg-white {
+  background-color: white;
+}
+.flag-seg--bg-orange {
+  background-color: orange;
+}
