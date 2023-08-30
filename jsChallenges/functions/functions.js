@@ -24,7 +24,10 @@ function remainder(a, b) {
   return a % b;
 }
 
-function lessThan100(twoPointers, threePointers) {
-  const total = twoPointers * 2 + threePointers * 3;
-  return total < 100 ? true : false;
+function totalPoints(twoPoints, threePoints) {
+  return twoPoints * 2 + threePoints * 3;
+}
+
+function lessThan100(a, b) {
+  return a + b < 100 ? true : false;
 }
