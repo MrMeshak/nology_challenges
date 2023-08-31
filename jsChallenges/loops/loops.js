@@ -48,6 +48,23 @@ function shiftChar(c) {
   }
   return c;
 }
+//___________________
+
+function capitalizeOddLetters(str) {
+  let updatedStr = '';
+  for (let i = 0; i < str.length; i++) {
+    if (i % 2 === 0) {
+      updatedStr += str[i];
+    } else {
+      updatedStr += str[i].toUpperCase();
+    }
+  }
+  return updatedStr;
+}
+
+console.log(capitalizeOddLetters('this is a string'));
+
+//___________________
 
 function encryptString(str) {
   let encryptedStr = '';
