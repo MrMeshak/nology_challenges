@@ -120,6 +120,10 @@ function generateRandomNumbers2(n, r, isUnique) {
   let i = 0;
   let numArr = [];
 
+  if (r > n && isUnique) {
+    throw error('n must be greater than range if numbers are unique');
+  }
+
   while (i < n) {
     const num = generateRandomInt(r);
 
