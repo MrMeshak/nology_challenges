@@ -13,11 +13,7 @@ console.log(sum(9));
 //__________________
 
 function sumBonus(n) {
-  if (n % 2 === 0) {
-    return (n / 2) * (n + 1);
-  } else {
-    return ((n - 1) / 2) * (n + 1) + (n + 1) / 2;
-  }
+  return (n / 2) * (n + 1);
 }
 
 console.log(sumBonus(9));
@@ -80,7 +76,7 @@ console.log(encryptString('hello!'));
 function removingVowels(str) {
   let updatedStr = '';
   for (let i = 0; i < str.length; i++) {
-    if (!/a|e|i|o|u/.test(str[i])) {
+    if (!/a|e|i|o|u|A|I|E|O|U/.test(str[i])) {
       updatedStr += str[i];
     }
   }
@@ -88,3 +84,58 @@ function removingVowels(str) {
 }
 
 console.log(removingVowels('calum'));
+
+//___________________
+
+// return a random int min <= n < max
+
+function generateRandomNum(max) {
+  return Math.random() * max;
+}
+
+function generateRandomNumbers1() {
+  let numArr = [];
+
+  let i = 0;
+  while (i < 10) {
+    const num = generateRandomNum(15);
+    if (numArr.includes(num)) {
+      continue;
+    }
+
+    numArr.push(num);
+    i++;
+  }
+
+  return numArr;
+}
+
+function generateRandomInt(max) {
+  max = Math.floor(max);
+  return Math.floor(Math.random() * max);
+}
+console.log(generateRandomNumbers1(10));
+
+function generateRandomNumbers2(n, r, isUnique) {
+  let i = 0;
+  let numArr = [];
+
+  if (r < n && isUnique) {
+    throw error('n must be greater than range if numbers are unique');
+  }
+
+  while (i < n) {
+    const num = generateRandomInt(r);
+
+    if (isUnique && numArr.includes(num)) {
+      continue;
+    }
+
+    numArr.push(num);
+    i++;
+  }
+
+  return numArr;
+}
+
+console.log(generateRandomNumbers2(10, 15, true));
