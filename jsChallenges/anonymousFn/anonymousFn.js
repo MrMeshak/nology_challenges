@@ -47,3 +47,5 @@ function filter(arr, func) {
 }
 
 console.log(filter([1, 2, 3, 4, 5], (value) => value > 3));
+
+console.log();
