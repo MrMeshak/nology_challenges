@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modules</title>
+    <script defer type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <h1>Shape Calculators</h1>
+    <section>
+      <h2>Rectangle</h2>
+      <form id="rectangleForm">
+        <div>
+          <label for="width">Width</label>
+          <input type="number" name="width" id="width" />
+        </div>
+        <div>
+          <label for="length">Length</label>
+          <input type="number" name="length" id="length" />
+        </div>
+        <h3>Choose Calculation</h3>
+        <select name="calculation">
+          <option value="p">Perimeter</option>
+          <option value="a">Area</option>
+        </select>
+        <button>Calculate</button>
+      </form>
+      <div id="rectangleOutput"></div>
+    </section>
+
+    <section>
+      <h2>Circle</h2>
+      <form id="circleForm">
+        <div>
+          <label for="radius">Radius</label>
+          <input type="number" name="radius" id="radius" />
+        </div>
+        <h3>Choose Calculation</h3>
+        <select name="calculation">
+          <option value="p">Perimeter</option>
+          <option value="a">Area</option>
+        </select>
+        <button>Calculate</button>
+      </form>
+      <div id="circleOutput"></div>
+    </section>
+  </body>
+</html>
