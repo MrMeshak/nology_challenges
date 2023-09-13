@@ -1,0 +1,12 @@
+.beer {
+}
+
+.button {
+  &--red {
+    background-color: red;
+  }
+
+  &--green {
+    background-color: green;
+  }
+}
